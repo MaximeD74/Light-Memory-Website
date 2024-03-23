@@ -94,22 +94,27 @@ function changeLanguage(lang) {
   // Sauvegarde la langue dans le Local Storage
   localStorage.setItem('preferredLanguage', lang);
 }
-
-// Charge la langue préférée au démarrage de la page
 function loadPreferredLanguage() {
-  const preferredLanguage = localStorage.getItem('preferredLanguage');
-  if (preferredLanguage) {
-      changeLanguage(preferredLanguage);
-      // Mettre à jour l'interface utilisateur pour refléter la langue active
-      const activeLangEl = langEl.querySelector(`[language="${preferredLanguage}"]`);
-      if (activeLangEl) {
-          langEl.querySelector('.active').classList.remove('active');
-          activeLangEl.classList.add('active');
-      }
+  let preferredLanguage = localStorage.getItem('preferredLanguage');
+  if (!preferredLanguage) {
+    // Forcer la langue française comme langue par défaut pour les nouveaux visiteurs
+    preferredLanguage = 'french';
+    localStorage.setItem('preferredLanguage', preferredLanguage);
+  }
+
+  // Appliquer la langue préférée
+  changeLanguage(preferredLanguage);
+
+  // Mettre à jour l'interface utilisateur pour refléter la langue active
+  const activeLangEl = langEl.querySelector(`[language="${preferredLanguage}"]`);
+  if (activeLangEl) {
+    langEl.querySelector('.active').classList.remove('active');
+    activeLangEl.classList.add('active');
   }
 }
 
-document.addEventListener('DOMContentLoaded', loadPreferredLanguage); // Appelé au chargement de la page
+// Appeler la fonction loadPreferredLanguage au chargement de la page
+document.addEventListener('DOMContentLoaded', loadPreferredLanguage);
 
 // Ajout des écouteurs d'événements pour les changements de langue
 link.forEach(el => {
