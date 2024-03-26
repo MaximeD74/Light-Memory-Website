@@ -486,17 +486,17 @@ Header Style
   transition: all 0.3s ease 0s;
   position: relative;
   z-index: 999;
+  
 }
 
 .yckprodlogo {
   height:200px;
   width: 200px;
   position: absolute;
-  
   transform: translateY(-58%);
 }
 
-@media screen and (max-width : 992px) and (min-width: 766px) {
+@media screen and (max-width : 992px) and (min-width: 0px) {
   .yckprodlogo {
     left: -5%;
   }
@@ -516,12 +516,14 @@ Header Style
   height: 50%;
   display: inline-block;
 }
+
+
 @media (max-width: 767px) {
   .yckprodlogo {
     height: 80px;
     width: 119.4px;
-    transform: translateY(-6%);
-  }
+    transform: translateY(-20%);
+    transform: translateX(-35%);  }
 }
 .header-area .main-nav .nav li:last-child {
   padding-right: 0px;
@@ -1083,34 +1085,31 @@ Video Style
   height: 100vh;
 }
 
-@media screen and (max-width : 800px) and (min-width: 550px) {
-  .videoSectionPricingPage {
-    height: 120vh;
-  }
+.decouvrezNosOffresContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  background-image: url(../images/video-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0px 100px 0px;
+  color: #FFF;
 }
-
-@media screen and (max-width : 550px) and (min-width: 360px) {
-  .videoSectionPricingPage {
-    height: 150vh;
-  }
+.decouvrezNosOffresContainer h2 {
+  color: #FFF;
 }
-
-@media screen and (max-width : 360px) and (min-width: 0px) {
-  .videoSectionPricingPage {
-    height: 170vh;
-  }
-}
-
 .offersContainer {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  position: absolute;
   top: 300px;
-  width: 90%;
-  left: 5%;
+  width: 80%;
+  left: 10%;
   align-items: center;
   justify-content: center;
+  
 }
 
 .lineRowOfferContainer {
@@ -1133,7 +1132,6 @@ Video Style
   outline: 2px solid white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  color: #FFF;
   text-align: center;
   position: relative;
 }
@@ -1161,6 +1159,9 @@ Video Style
   bottom: 5px;
   left: calc(50% - 50px);
 }
+
+
+
 .video .section-heading h2 {
   color: #fff;
 }
