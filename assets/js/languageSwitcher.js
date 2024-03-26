@@ -3,6 +3,7 @@ const link = document.querySelectorAll('a');
 const homePage = document.querySelector('.homePage');
 const galleryPage = document.querySelector('.galleryPage');
 const detailsPage = document.querySelector('.detailsPage');
+const pricingPage = document.querySelector('.pricingPage');
 const contactPage = document.querySelector('.contactPage');
 const contactButton = document.querySelector('.contactButton');
 //const banner1Title = document.querySelector('.banner1Title');
@@ -28,8 +29,10 @@ const sectionGalerie = document.querySelector('.sectionGalerie');
 const youFindProjects = document.querySelector('.youFindProjects');
 const contactUsSection = document.querySelector('.contactUsSection');
 const getInTouchWithUs = document.querySelector('.getInTouchWithUs');
-
-
+const decouvrezOffres = document.querySelector('.decouvrezOffres');
+const packBasicDescription = document.querySelector('.packBasicDescription');
+const packSmartDescription = document.querySelector('.packSmartDescription');
+const packPremiumDescription = document.querySelector('.packPremiumDescription');
 
 
 
@@ -50,6 +53,7 @@ function changeLanguage(lang) {
   if (homePage) homePage.textContent = data[attr].homePage;
 	if (galleryPage) galleryPage.textContent = data[attr].galleryPage;
   if (detailsPage) detailsPage.textContent = data[attr].detailsPage;
+  if (pricingPage) pricingPage.textContent = data[attr].pricingPage;
   if (contactPage) contactPage.textContent = data[attr].contactPage;
   //const words1 = data[attr].colorBanner1Title.split(' ');
   //banner1Title.innerHTML = data[attr].banner1Title + " " + `<img src="./assets/images/logo google mapS.png" alt="logo Google Maps" class="logoGoogleMaps">`;
@@ -75,9 +79,13 @@ function changeLanguage(lang) {
   if (youFindProjects) youFindProjects.innerHTML = data[attr].youFindProjects;
   if (contactUsSection) contactUsSection.innerHTML = data[attr].contactUsSection;
   if (getInTouchWithUs) getInTouchWithUs.innerHTML = data[attr].getInTouchWithUs;
+  if (decouvrezOffres) decouvrezOffres.innerHTML = data[attr].decouvrezOffres;
+  if (packBasicDescription) packBasicDescription.innerHTML = data[attr].packBasicDescription;
+  if (packSmartDescription) packSmartDescription.innerHTML = data[attr].packSmartDescription;
+  if (packPremiumDescription) packPremiumDescription.innerHTML = data[attr].packPremiumDescription;
 
-
-
+  
+  
   
   
   
@@ -134,6 +142,7 @@ link.forEach(el => {
 			    "homePage": "Home",
 			    "galleryPage": "Gallery",
                 "detailsPage": "Details",
+                "pricingPage": "Pricing",
                 "contactPage": "Contact",
                 "scheduleCall": "Schedule a call",
                 "banner1Title": "panoramic 360 Google Maps",
@@ -159,9 +168,10 @@ link.forEach(el => {
                 "youFindProjects": "You Can Find Our Projects Here",
                 "contactUsSection": "| CONTACT US",
                 "getInTouchWithUs": "Get In Touch <br>With Us",
-
-                
-                
+                "decouvrezOffres": "Discover our offers",
+                "packBasicDescription": "Perfect for small spaces, this pack includes three 360° photos with editing and online publishing in just 2 working days.",
+                "packSmartDescription": "For more extensive coverage, opt for our SMART pack, which offers 5 360° photos with editing and online publishing in 2 working days.",
+                "packPremiumDescription": "Treat yourself to our best offer with the PREMIUM pack, including 10 360° photos, fast editing and uploading in just 5 working days, and a personalized QR code to direct your customers to the reviews section of your Google page.", 
                 
 			  },
 			  "french": 
@@ -169,6 +179,7 @@ link.forEach(el => {
 			    "homePage": "Accueil",
 			    "galleryPage": "Galerie",
                 "detailsPage": "Details",
+                "pricingPage": "Tarifs",
                 "contactPage": "Contactez-nous",
                 "scheduleCall": "Planifiez un appel",
                 "banner1Title": "panoramique 360 ​​Google Maps",
@@ -194,6 +205,10 @@ link.forEach(el => {
                 "youFindProjects": "Vous pouvez trouver nos projets ici",
                 "contactUsSection": "| CONTACTEZ-NOUS",
                 "getInTouchWithUs": "Prenez contact <br>avec nous",
+                "decouvrezOffres": "Découvrez nos offres",
+                "packBasicDescription": "Parfait pour les petites surfaces, ce pack comprend 3 photos 360° avec édition et mise en ligne en seulement 2 jours ouvrables",
+                "packSmartDescription": "Pour une couverture plus étendue, optez pour notre pack SMART qui propose 5 photos 360° avec édition et mise en ligne en 2 jours ouvrables",
+                "packPremiumDescription": "Offrez vous notre meilleure offre avec le pack PREMIUM, comprenant 10 photos 360°, une édition et mise en ligne rapide en seulement 5 jours ouvrables, ainsi qu'un QR code personnalisé pour diriger vos clients vers la section avis de votre page Google", 
 
 			  },
 			  "italian": 
@@ -201,6 +216,7 @@ link.forEach(el => {
 			    "homePage": "Accoglienza",
 			    "galleryPage": "galleria",
                 "detailsPage": "Dettagli",
+                "pricingPage": "Tariffe",
                 "contactPage": "Contatto",
                 "scheduleCall": "Pianifica una chiamata",
                 "banner1Title": "panoramico 360 Google Maps",
@@ -226,6 +242,10 @@ link.forEach(el => {
                "youFindProjects": "Puoi trovare i nostri progetti qui",
                "contactUsSection": "| CONTATTACI",
                "getInTouchWithUs": "Mettiti in contatto <br>con noi",
+               "decouvrezOffres": "Scopri le nostre offerte",
+               "packBasicDescription": "Perfetto per i piccoli spazi, questo pacchetto comprende 3 foto a 360°, editate e online in soli 2 giorni lavorativi.",
+               "packSmartDescription": "Per una copertura più ampia, optate per il nostro pacchetto SMART, che comprende 5 foto a 360°, editate e online entro 2 giorni lavorativi.",
+               "packPremiumDescription": "Concedetevi la nostra migliore offerta con il pacchetto PREMIUM, che include 10 foto a 360°, editing e caricamento rapido in soli 5 giorni lavorativi e un codice QR personalizzato per indirizzare i vostri clienti alla sezione recensioni della vostra pagina Google.", 
 
 			  },
               "german": 
@@ -233,6 +253,7 @@ link.forEach(el => {
 			    "homePage": "Willkommen",
                 "galleryPage": "Galerie",
                 "detailsPage": "Einzelheiten",
+                "pricingPage": "Tarife",
                 "contactPage": "Kontakt",
                 "scheduleCall": "Einen Anruf planen",
                 "banner1Title": "360 Google Maps",
@@ -258,6 +279,10 @@ link.forEach(el => {
                 "youFindProjects": "Unsere Projekte finden Sie hier",
                 "contactUsSection": "| KONTAKTIERE UNS",
                 "getInTouchWithUs": "Nehmen Sie Kontakt <br>mit uns auf",
+                "decouvrezOffres": "Entdecke unsere Angebote",
+                "packBasicDescription": "Perfekt für kleine Flächen. Dieses Paket enthält 3 360°-Fotos mit Bearbeitung und Upload in nur 2 Werktagen.",
+                "packSmartDescription": "Wenn Sie eine größere Abdeckung wünschen, entscheiden Sie sich für unser SMART-Paket, das 5 360°-Fotos mit Bearbeitung und Upload innerhalb von 2 Werktagen bietet.",
+                "packPremiumDescription": "Gönnen Sie sich unser bestes Angebot mit dem PREMIUM-Paket, das 10 360°-Fotos, eine schnelle Bearbeitung und Upload in nur 5 Werktagen sowie einen personalisierten QR-Code enthält, der Ihre Kunden zum Bewertungsbereich Ihrer Google-Seite leitet.", 
 
 			  }
 			}

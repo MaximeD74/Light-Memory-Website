@@ -1129,12 +1129,13 @@ Video Style
   flex-direction: column;
   min-width: 200px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.2);
-  outline: 3px solid white;
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: 2px solid white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   color: #FFF;
   text-align: center;
+  position: relative;
 }
 
 .packTitle {
@@ -1147,7 +1148,7 @@ Video Style
 }
 
 .packDescription {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   font-size: 16px;
 }
 
@@ -1155,6 +1156,10 @@ Video Style
   font-size: 18px;
   border: 1px solid #FFF;
   border-radius: 10px;
+  position: absolute;
+  width: 100px;
+  bottom: 5px;
+  left: calc(50% - 50px);
 }
 .video .section-heading h2 {
   color: #fff;
