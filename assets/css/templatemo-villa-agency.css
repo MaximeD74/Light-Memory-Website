@@ -459,7 +459,7 @@ Header Style
     right: 5%;
   }
 }
-@media (min-width: 767px) and (max-width: 992px) {
+@media (min-width: 767px) and (max-width: 993px) {
   .langWrap {
     top: 0.5%;
     right: 5%;
@@ -494,6 +494,12 @@ Header Style
   position: absolute;
   
   transform: translateY(-58%);
+}
+
+@media screen and (max-width : 992px) and (min-width: 766px) {
+  .yckprodlogo {
+    left: -5%;
+  }
 }
 
 .logoGoogleMaps {
@@ -1071,6 +1077,85 @@ Video Style
   border-radius: 10px;
 }
 
+.videoSectionPricingPage {
+  margin: 0;
+  position: relative;
+  height: 100vh;
+}
+
+@media screen and (max-width : 800px) and (min-width: 550px) {
+  .videoSectionPricingPage {
+    height: 120vh;
+  }
+}
+
+@media screen and (max-width : 550px) and (min-width: 360px) {
+  .videoSectionPricingPage {
+    height: 150vh;
+  }
+}
+
+@media screen and (max-width : 360px) and (min-width: 0px) {
+  .videoSectionPricingPage {
+    height: 170vh;
+  }
+}
+
+.offersContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  position: absolute;
+  top: 300px;
+  width: 90%;
+  left: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.lineRowOfferContainer {
+  display: flex;
+  gap: 50px;
+}
+
+@media screen and (max-width : 550px) {
+  .lineRowOfferContainer {
+    flex-direction : column;
+  }
+}
+
+.offerContainer {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: 3px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  color: #FFF;
+  text-align: center;
+}
+
+.packTitle {
+  color: #ee626b;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.packDescription {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.packPrice {
+  font-size: 18px;
+  border: 1px solid #FFF;
+  border-radius: 10px;
+}
 .video .section-heading h2 {
   color: #fff;
 }
