@@ -1090,6 +1090,10 @@ Video Style
   .bandeau {
     font-size: 24px;
   }
+  .lightmemorylogo {
+    height:120px;
+    width: 120px;
+  }
 }
 .video {
   background-image: url(../images/video-bg.jpg);
