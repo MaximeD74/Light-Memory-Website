@@ -1082,8 +1082,8 @@ Video Style
 
 @media screen and (min-width: 450px) {
   .bandeau {
-    height:200px;
-    width: 200px;
+    height:90px;
+    width: 90px;
   }
 }
 
@@ -1097,8 +1097,8 @@ Video Style
     font-size: 24px;
   }
   .lightmemorylogo {
-    height:120px;
-    width: 120px;
+    height:60px;
+    width: 60px;
   }
 }
 .video {
