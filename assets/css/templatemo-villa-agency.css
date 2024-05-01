@@ -1064,7 +1064,8 @@ Video Style
   top: -120px;
   height: 120px;
   width: 100%;
-  background: linear-gradient(to bottom, #f5f5f5, #999999);
+  background-color: #222;
+  letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #FFFFFF;
   font-size: 60px;
