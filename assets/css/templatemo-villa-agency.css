@@ -1075,11 +1075,7 @@ Video Style
   font-family: 'Playfair Display', serif;
 }
 
-.bandeau .lightmemorylogo {
-  margin-left: 20px;
-  height:75px;
-  width: 75px;
-}
+
 
 @media screen and (max-width : 550px) and (min-width: 0px) {
   .bandeau {
