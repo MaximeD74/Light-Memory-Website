@@ -1110,6 +1110,9 @@ Video Style
     height:40px;
     width: 40px;
   }
+  .bandeau {
+    font-size: 16px;
+  }
 }
 .video {
   background-image: url(../images/video-bg.jpg);
