@@ -1063,7 +1063,14 @@ Video Style
   position: absolute;
   top: -120px;
   height: 120px;
-  background-color: #3a3a3a;
+  width: 100%;
+  background-color:#7a7a7a;
+  color: #ddd;
+  font-size: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .video {
   background-image: url(../images/video-bg.jpg);
