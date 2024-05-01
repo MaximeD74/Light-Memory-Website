@@ -497,7 +497,7 @@ Header Style
 }
 
 @media screen and (max-width : 992px) and (min-width: 0px) {
-  .yckprodlogo {
+  .lightmemorylogo {
     left: -5%;
   }
 }
@@ -519,7 +519,7 @@ Header Style
 
 
 @media (max-width: 767px) {
-  .yckprodlogo {
+  .lightmemorylogo {
     height: 80px;
     width: 119.4px;
     transform: translateY(-20%);
@@ -1073,6 +1073,12 @@ Video Style
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width : 550px) and (min-width: 0px) {
+  .bandeau {
+    font-size: 32px;
+  }
 }
 .video {
   background-image: url(../images/video-bg.jpg);
