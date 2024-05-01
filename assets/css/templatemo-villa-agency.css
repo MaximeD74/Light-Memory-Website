@@ -1076,7 +1076,7 @@ Video Style
 }
 
 .bandeau .lightmemorylogo {
-  
+  margin-left: -40px;
   height:200px;
   width: 200px;
 }
