@@ -1059,7 +1059,12 @@ Featured Style
 Video Style
 --------------------------------------------- 
 */
-
+.bandeau {
+  position: absolute;
+  top: -120px;
+  height: 120px;
+  background-color: #3a3a3a;
+}
 .video {
   background-image: url(../images/video-bg.jpg);
   background-repeat: no-repeat;
@@ -1649,6 +1654,7 @@ footer {
   margin-top: 50px;
   background-color: #1e1e1e;
   min-height: 100px;
+  width: 100%;
 }
 
 footer p {
