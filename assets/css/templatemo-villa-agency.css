@@ -1081,9 +1081,13 @@ Video Style
   width: 200px;
 }
 
-@media screen and (max-width : 550px) and (min-width: 0px) {
+@media screen and (max-width : 670px) and (min-width: 450px) {
   .bandeau {
     font-size: 32px;
+  }
+}@media screen and (max-width : 449px) and (min-width: 0px) {
+  .bandeau {
+    font-size: 24px;
   }
 }
 .video {
