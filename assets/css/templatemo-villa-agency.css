@@ -492,10 +492,13 @@ Header Style
 .lightmemorylogo {
   height:200px;
   width: 200px;
-  position: absolute;
-  transform: translateY(-58%);
+  
+  
 }
-
+.main-nav .lightmemorylogo {
+  transform: translateY(-58%);
+  position: absolute;
+}
 @media screen and (max-width : 992px) and (min-width: 0px) {
   .lightmemorylogo {
     left: -5%;
