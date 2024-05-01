@@ -1073,6 +1073,7 @@ Video Style
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media screen and (max-width : 550px) and (min-width: 0px) {
