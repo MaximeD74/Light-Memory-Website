@@ -489,18 +489,14 @@ Header Style
   
 }
 
-.lightmemorylogo {
-  height:200px;
-  width: 200px;
-  
-  
-}
 .main-nav .lightmemorylogo {
   transform: translateY(-58%);
   position: absolute;
+  height:200px;
+  width: 200px;
 }
 @media screen and (max-width : 992px) and (min-width: 0px) {
-  .lightmemorylogo {
+  .main-nav .lightmemorylogo {
     left: -5%;
   }
 }
@@ -522,7 +518,7 @@ Header Style
 
 
 @media (max-width: 767px) {
-  .lightmemorylogo {
+  .main-nav .lightmemorylogo {
     height: 80px;
     width: 119.4px;
     transform: translateY(-20%);
@@ -1081,6 +1077,8 @@ Video Style
 
 .bandeau .lightmemorylogo {
   margin-left: 20px;
+  height:75px;
+  width: 75px;
 }
 
 @media screen and (max-width : 550px) and (min-width: 0px) {
