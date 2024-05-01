@@ -1096,13 +1096,19 @@ Video Style
     width: 70px;
   }
 }
-@media screen and (max-width : 449px) and (min-width: 0px) {
+@media screen and (max-width : 449px) and (min-width: 330px) {
   .bandeau {
     font-size: 24px;
   }
   .lightmemorylogo {
     height:60px;
     width: 60px;
+  }
+}
+@media screen and (max-width : 331px) and (min-width: 0px) {
+  .lightmemorylogo {
+    height:40px;
+    width: 40px;
   }
 }
 .video {
