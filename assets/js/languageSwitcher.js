@@ -202,7 +202,7 @@ link.forEach(el => {
                 "infosResto": "Nous savons qu'il est plus facile de prendre des photos lorsqu'il n'y a pas de client. Nous pouvons prendre des photos pendant ou après votre quart de travail. Dans tous les cas, nous floutons les visages des personnes pour respecter la vie privée",
                 "infosShops": "Du magasin de vêtements au garage automobile, les visites virtuelles sont toujours un plus pour votre visibilité sur les recherches Google.<br><br>Si vous avez plusieurs adresses, nous pouvons planifier plusieurs rendez-vous pour prendre des photos dans chaque magasin",
                 "sectionGalerie": "| GALERIE",
-                "youFindProjects": "Voici quelques examples",
+                "youFindProjects": "Voici quelques exemples",
                 "contactUsSection": "| CONTACTEZ-NOUS",
                 "getInTouchWithUs": "Prenez contact <br>avec nous",
                 "decouvrezOffres": "Découvrez nos offres",
