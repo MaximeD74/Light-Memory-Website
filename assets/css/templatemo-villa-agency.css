@@ -1435,7 +1435,7 @@ Properties Style
 .galleryFull {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
   align-items: center;
   justify-content: center;
   padding: 0;
@@ -1521,7 +1521,14 @@ Properties Style
 }
 
 
+.fullVisite {
+  width: 90%;
+  height: 600px;
+}
 
+.fullVisiteItem {
+  height: 600px;
+}
 
 /* 
 ---------------------------------------------
