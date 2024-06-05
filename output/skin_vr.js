@@ -1,7 +1,7 @@
 // Garden Gnome Software - VR - Skin
 // Pano2VR 7.0.12/20035
 // Filename: feather_vr.ggsk
-// Generated 2024-06-05T15:39:35
+// Generated 2024-06-05T16:37:38
 
 function pano2vrVrSkin(player,base) {
 	player.addVariable('node_cloner_vr_hasUp', 2, false, { ignoreInState: 0  });
