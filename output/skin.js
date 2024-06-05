@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.0.12/20035
 // Filename: TEEEEEEEEEEST.ggsk
-// Generated 2024-06-05T16:37:38
+// Generated 2024-06-05T16:43:03
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_sounds_splashscreen', 2, false, { ignoreInState: 1  });
@@ -6543,16 +6543,15 @@ function pano2vrSkin(player,base) {
 		el.appendChild(els);
 		el.ggSubElement = els;
 		el.ggId="Svg 1";
-		el.ggDy=-60;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=true;
 		el.className="ggskin ggskin_svg ";
 		el.ggType='svg';
 		hs ='';
+		hs+='bottom : 10px;';
 		hs+='height : 24px;';
 		hs+='position : absolute;';
-		hs+='right : 10px;';
-		hs+='top : calc(50% - ((24px + 0px) / 2) - 60px);';
+		hs+='right : 7px;';
 		hs+='visibility : inherit;';
 		hs+='width : 24px;';
 		hs+='pointer-events:auto;';
@@ -6598,16 +6597,15 @@ function pano2vrSkin(player,base) {
 		el.appendChild(els);
 		el.ggSubElement = els;
 		el.ggId="Svg 2";
-		el.ggDy=60;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=true;
 		el.className="ggskin ggskin_button ";
 		el.ggType='button';
 		hs ='';
+		hs+='bottom : 45px;';
 		hs+='height : 32px;';
 		hs+='position : absolute;';
 		hs+='right : 3px;';
-		hs+='top : calc(50% - ((32px + 0px) / 2) + 60px);';
 		hs+='visibility : inherit;';
 		hs+='width : 32px;';
 		hs+='pointer-events:auto;';
@@ -6627,16 +6625,15 @@ function pano2vrSkin(player,base) {
 		me.divSkin.appendChild(me._svg_2);
 		el=me._fullscreen_toggleadd=document.createElement('div');
 		el.ggId="fullscreen_toggle-add";
-		el.ggDy=0;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=false;
 		el.className="ggskin ggskin_container ";
 		el.ggType='container';
 		hs ='';
+		hs+='bottom : 80px;';
 		hs+='height : 32px;';
 		hs+='position : absolute;';
 		hs+='right : 3px;';
-		hs+='top : calc(50% - ((32px + 0px) / 2) + 0px);';
 		hs+='visibility : hidden;';
 		hs+='width : 32px;';
 		hs+='pointer-events:none;';
@@ -12718,10 +12715,10 @@ function pano2vrSkin(player,base) {
 					((player.getVariableValue('resp_phone') == false))
 				)
 			) {
-				let pdfInterval_23 = setInterval(() => {
+				let pdfInterval_31 = setInterval(() => {
 					if (skin._pdf_popup_pdf__pdf.contentWindow.PDFViewerApplication && skin._pdf_popup_pdf__pdf.contentWindow.PDFViewerApplication.initialized && skin._pdf_popup_pdf__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._pdf_popup_pdf__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._pdf_popup_pdf.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_23);
+						clearInterval(pdfInterval_31);
 					}
 				}, 50);
 			}
@@ -12744,10 +12741,10 @@ function pano2vrSkin(player,base) {
 					((player.getVariableValue('resp_phone') == true))
 				)
 			) {
-				let pdfInterval_24 = setInterval(() => {
+				let pdfInterval_32 = setInterval(() => {
 					if (skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.initialized && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._pdf_popup_phone.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_24);
+						clearInterval(pdfInterval_32);
 					}
 				}, 50);
 			}
