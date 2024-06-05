@@ -490,14 +490,14 @@ Header Style
 }
 
 .main-nav .lightmemorylogo {
-  transform: translateY(-58%);
+  transform: translateY(-90%);
   position: absolute;
-  height:200px;
-  width: 200px;
+  height:50px;
+  width: 50px;
 }
 @media screen and (max-width : 992px) and (min-width: 0px) {
   .main-nav .lightmemorylogo {
-    left: -5%;
+    left: 5%;
   }
 }
 
@@ -519,10 +519,10 @@ Header Style
 
 @media (max-width: 767px) {
   .main-nav .lightmemorylogo {
-    height: 80px;
-    width: 119.4px;
-    transform: translateY(-20%);
-    transform: translateX(-35%);  }
+    height: 50px;
+    width: 50px;
+    
+    transform: translateY(25%);  }
 }
 .header-area .main-nav .nav li:last-child {
   padding-right: 0px;
@@ -1063,10 +1063,10 @@ Video Style
   top: -120px;
   height: 120px;
   width: 100%;
-  background-color: #222;
+  
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  color: #FFFFFF;
+  color: black;
   font-size: 60px;
   display: flex;
   flex-direction: row;
