@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.0.12/20035
 // Filename: TEEEEEEEEEEST.ggsk
-// Generated 2024-06-07T15:06:46
+// Generated 2024-06-07T15:31:56
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_sounds_splashscreen', 2, false, { ignoreInState: 1  });
@@ -426,8 +426,8 @@ function pano2vrSkin(player,base) {
 		hs+='cursor : default;';
 		hs+='height : 45px;';
 		hs+='position : absolute;';
-		hs+='right : 30px;';
-		hs+='top : 160px;';
+		hs+='right : 10px;';
+		hs+='top : 90px;';
 		hs+='visibility : hidden;';
 		hs+='width : calc(100% - 120px);';
 		hs+='pointer-events:none;';
@@ -491,8 +491,8 @@ function pano2vrSkin(player,base) {
 					me._node_title.style.top='30px';
 				}
 				else {
-					me._node_title.style.right='30px';
-					me._node_title.style.top='160px';
+					me._node_title.style.right='10px';
+					me._node_title.style.top='90px';
 				}
 			}
 		}
@@ -594,8 +594,8 @@ function pano2vrSkin(player,base) {
 		hs+='cursor : default;';
 		hs+='height : 70px;';
 		hs+='position : absolute;';
-		hs+='right : 30px;';
-		hs+='top : 70px;';
+		hs+='right : 10px;';
+		hs+='top : 10px;';
 		hs+='visibility : hidden;';
 		hs+='width : calc(100% - 120px);';
 		hs+='pointer-events:none;';
@@ -6493,10 +6493,10 @@ function pano2vrSkin(player,base) {
 		el.className="ggskin ggskin_image ";
 		el.ggType='image';
 		hs ='';
+		hs+='bottom : 0px;';
 		hs+='height : 70px;';
 		hs+='position : absolute;';
 		hs+='right : 0px;';
-		hs+='top : 0px;';
 		hs+='visibility : inherit;';
 		hs+='width : 70px;';
 		hs+='pointer-events:auto;';
@@ -6568,10 +6568,10 @@ function pano2vrSkin(player,base) {
 		el.className="ggskin ggskin_svg ";
 		el.ggType='svg';
 		hs ='';
-		hs+='bottom : 10px;';
 		hs+='height : 24px;';
 		hs+='position : absolute;';
-		hs+='right : 7px;';
+		hs+='right : 90px;';
+		hs+='top : 155px;';
 		hs+='visibility : inherit;';
 		hs+='width : 24px;';
 		hs+='pointer-events:auto;';
@@ -6622,10 +6622,10 @@ function pano2vrSkin(player,base) {
 		el.className="ggskin ggskin_button ";
 		el.ggType='button';
 		hs ='';
-		hs+='bottom : 45px;';
 		hs+='height : 32px;';
 		hs+='position : absolute;';
-		hs+='right : 3px;';
+		hs+='right : 45px;';
+		hs+='top : 150px;';
 		hs+='visibility : inherit;';
 		hs+='width : 32px;';
 		hs+='pointer-events:auto;';
@@ -6650,10 +6650,10 @@ function pano2vrSkin(player,base) {
 		el.className="ggskin ggskin_container ";
 		el.ggType='container';
 		hs ='';
-		hs+='bottom : 80px;';
 		hs+='height : 32px;';
 		hs+='position : absolute;';
-		hs+='right : 3px;';
+		hs+='right : 5px;';
+		hs+='top : 150px;';
 		hs+='visibility : hidden;';
 		hs+='width : 32px;';
 		hs+='pointer-events:none;';
@@ -6816,8 +6816,8 @@ function pano2vrSkin(player,base) {
 		el.ggType='svg';
 		hs ='';
 		hs+='height : 32px;';
-		hs+='left : 0px;';
 		hs+='position : absolute;';
+		hs+='right : 0px;';
 		hs+='top : 0px;';
 		hs+='visibility : inherit;';
 		hs+='width : 32px;';
@@ -12596,10 +12596,10 @@ function pano2vrSkin(player,base) {
 					((player.getVariableValue('resp_phone') == false))
 				)
 			) {
-				let pdfInterval_31 = setInterval(() => {
+				let pdfInterval_105 = setInterval(() => {
 					if (skin._pdf_popup_pdf__pdf.contentWindow.PDFViewerApplication && skin._pdf_popup_pdf__pdf.contentWindow.PDFViewerApplication.initialized && skin._pdf_popup_pdf__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._pdf_popup_pdf__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._pdf_popup_pdf.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_31);
+						clearInterval(pdfInterval_105);
 					}
 				}, 50);
 			}
@@ -12622,10 +12622,10 @@ function pano2vrSkin(player,base) {
 					((player.getVariableValue('resp_phone') == true))
 				)
 			) {
-				let pdfInterval_32 = setInterval(() => {
+				let pdfInterval_106 = setInterval(() => {
 					if (skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.initialized && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._pdf_popup_phone.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_32);
+						clearInterval(pdfInterval_106);
 					}
 				}, 50);
 			}
