@@ -1833,6 +1833,7 @@ function webViewerInitialized() {
   var textSearch;
   var fullscreen;
   var printing;
+  var download;
   var tools;
   var enableLinks;
   var queryString = document.location.search.substring(1);
@@ -1843,6 +1844,7 @@ function webViewerInitialized() {
   textSearch = 'textsearch' in params ? params.textsearch : true;
   fullscreen = 'fullscreen' in params ? params.fullscreen : true;
   printing = 'printing' in params ? params.printing : true;
+  download = 'download' in params ? params.download : true;
   tools = 'tools' in params ? params.tools : true;
   enableLinks = 'enablelinks' in params ? params.enablelinks : true;
   if (toolbar == 'true') {
@@ -1861,13 +1863,15 @@ function webViewerInitialized() {
       appConfig.toolbar.print.setAttribute('hidden', 'true');
       appConfig.secondaryToolbar.printButton.setAttribute('hidden', 'true');
     }
+    if (download == 'false') {
+      appConfig.toolbar.download.setAttribute('hidden', 'true');
+      appConfig.secondaryToolbar.downloadButton.setAttribute('hidden', 'true');
+    }
     if (tools == 'false') {
       appConfig.secondaryToolbar.toggleButton.setAttribute('hidden', 'true');
     }
     appConfig.toolbar.openFile.setAttribute('hidden', 'true');
     appConfig.secondaryToolbar.openFileButton.setAttribute('hidden', 'true');
-    appConfig.toolbar.download.setAttribute('hidden', 'true');
-    appConfig.secondaryToolbar.downloadButton.setAttribute('hidden', 'true');
     appConfig.toolbar.viewBookmark.setAttribute('hidden', 'true');
     appConfig.secondaryToolbar.viewBookmarkButton.setAttribute('hidden', 'true');
     appConfig.secondaryToolbar.documentPropertiesButton.setAttribute('hidden', 'true');

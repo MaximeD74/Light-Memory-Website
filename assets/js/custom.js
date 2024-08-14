@@ -124,3 +124,46 @@
 
 
 })(window.jQuery);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const targets = document.querySelectorAll('.informationTitleText, .articleInformations iframe');
+  
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Ajouter la classe 'show' avec un délai si c'est un iframe
+          if (entry.target.tagName.toLowerCase() === 'iframe') {
+            setTimeout(() => {
+              entry.target.classList.add('show');
+            }, 700); // 1000 ms = 1 seconde
+          } else {
+            entry.target.classList.add('show');
+          }
+        }
+      });
+    }, {
+      threshold: 0.5
+    });
+  
+    targets.forEach(target => {
+      observer.observe(target);
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll('.properties .item');
+  
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('showTop');
+        }
+      });
+    }, {
+      threshold: 0.5
+    });
+  
+    items.forEach(item => {
+      observer.observe(item);
+    });
+  });
