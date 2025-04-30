@@ -33,6 +33,11 @@
     <meta name="twitter:description" content="Services de photographie professionnelle et de visites virtuelles 360° pour une meilleure visibilité en ligne.">
     <meta name="twitter:image" content="https://light-memory.com/assets/images/logoLM/logoLM.svg">
     <meta name="twitter:site" content="@LightMemory360">
+
+    <!-- Gestion des cookies -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.0/build/cookieconsent.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.0/build/cookieconsent.min.js"></script>
+
   </head>
 
 <body>
@@ -274,5 +279,26 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script>
+    window.addEventListener("load", function() {
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#000"
+          },
+          "button": {
+            "background": "#f1d600"
+          }
+        },
+        "theme": "classic",
+        "content": {
+          "message": "Ce site utilise des cookies pour améliorer votre expérience. En poursuivant votre navigation, vous acceptez l'utilisation des cookies.",
+          "dismiss": "Accepter",
+          "link": "En savoir plus",
+          "href": "https://light-memory.com/politique-de-confidentialite"
+        }
+      });
+    });
+  </script>
   </body>
 </html>
