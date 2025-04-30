@@ -125,22 +125,22 @@
       <div class="contact-right">
         
         <div id="contact-form">
-          <form action="/send_email.php" method="post">
+          <form name="contact" method="POST" data-netlify="true">
             <div class="row">
               <div class="col-lg-12">
-                <label for="name">Nom de votre entreprise</label>
+                <label for="company">Nom de votre entreprise</label>
                 <input type="text" id="company" name="company" required>
               </div>
               <div class="col-lg-12">
-                <label for="name">Votre nom et prénom</label>
-                <input type="text" id="name" name="name" required>
+                <label for="fullname">Votre nom et prénom</label>
+                <input type="text" id="fullname" name="fullname" required>
               </div>
               <div class="col-lg-12">
                 <label for="email">Adresse mail</label>
                 <input type="email" id="email" name="email" required>
               </div>
               <div class="col-lg-12">
-                <label for="subject">Sujet</label>
+                <label for="subject">Objet</label>
                 <input type="text" id="subject" name="subject" required>
               </div>
               <div class="col-lg-12">
@@ -148,7 +148,7 @@
                 <textarea id="message" name="message" rows="6" required></textarea>
               </div>
               <div class="col-lg-12 submitButtonMiddle">
-                <button type="submit">Send Message</button>
+                <button type="submit">Envoyer</button>
               </div>
             </div>
           </form>
@@ -159,7 +159,13 @@
   </div>
           
         
-        
+  <form name="contact" netlify hidden>
+    <input type="text" name="company">
+    <input type="text" name="fullname">
+    <input type="email" name="email">
+    <input type="text" name="subject">
+    <textarea name="message"></textarea>
+  </form>
    
 
   <footer>
