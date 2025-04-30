@@ -934,6 +934,53 @@ Banner Style
 }
 
 
+.banner-about {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('/assets/images/banner-01.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+  margin-bottom: -50px;
+}
+
+.banner-about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.banner-about h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.banner-about p {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.btn-discover {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: var(--primary-color);
+  padding: 16px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.btn-discover:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  transform: scale(1.05);
+}
+
+
 /* 
 ---------------------------------------------
 Informations Style
@@ -1351,7 +1398,69 @@ Properties Style
   text-align: center;
 }
 
+/* 
+---------------------------------------------
+Avis Clients
+--------------------------------------------- 
+*/
 
+.avisClient {
+  background-color: #f9f9f9;  /* Fond léger */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.avisClient-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.avisClient-content p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.client-testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grid responsive */
+  gap: 30px;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-10px); /* Effet de levée au survol */
+}
+
+.testimonial-icon {
+  margin-bottom: 20px;
+}
+
+.testimonial-icon img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  
+}
+
+.testimonial-text h3 {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.testimonial-text p {
+  font-size: 1rem;
+  color: #555;
+}
 
 
 /* 
@@ -1361,7 +1470,7 @@ Contact Style
 */
 
 .contact {
-  background-image: url(../images/contact-bg.jpg);
+  background-image: url(../images/banner-01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
