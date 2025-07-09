@@ -1,0 +1,7 @@
+# Force tout le trafic vers www.light-memory.com (uniquement si l'hôte n'est pas déjà celui-là)
+[[redirects]]
+  from = "/*"
+  to = "https://www.light-memory.com/:splat"
+  status = 301
+  force = true
+  conditions = { Host = "lightmemory.netlify.app" }
