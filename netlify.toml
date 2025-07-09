@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/*"
+  to = "https://www.light-memory.com/:splat"
+  status = 301
+  force = true
