@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/lightmemory.netlify.app"
-  to = "https://www.light-memory.com/:splat"
-  status = 301
-  force = true
