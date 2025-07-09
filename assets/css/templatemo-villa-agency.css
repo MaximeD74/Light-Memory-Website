@@ -55,6 +55,20 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: 700;
 }
+.h1White {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+
+
+.firstTitle {
+  color: white;
+}
+
+.h1InBanner {
+  color: white;
+}
 .fa {
   font-family: var(--fa-style-family, "Font Awesome 6 Free");
   font-weight: var(--fa-style, 900); }
@@ -104,12 +118,14 @@ Global Styles
 }
 
 .section-heading {
-  margin-bottom: 50px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.text-center-exception {
+  margin-bottom: -50px;
 }
 
 .section-heading h3 {
@@ -263,11 +279,13 @@ Header Style
   align-items: center;
   justify-content: center;
   gap: 20px;
+  
 }
+
 
 .sub-header {
   background-color: #1e1e1e;
-  padding: 10px 0px;
+  padding: 10px 10px;
   position: relative;
   border-bottom: 1px solid #eee;
 }
@@ -445,12 +463,9 @@ Header Style
   
 }
 
-.main-nav .lightmemorylogo {
-  transform: translateY(-90%);
-  position: absolute;
-  height:50px;
-  width: 50px;
-  left: 5%;
+.lightmemorylogo {
+  width: 100px;
+  height: 100px;
 }
 
 @media screen and (max-width : 992px) and (min-width: 0px) {
@@ -1198,6 +1213,7 @@ Bannière secondaire Style
 /* Style de la section "En savoir plus" */
 .learn-more-section {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   justify-content: center;
@@ -1206,6 +1222,19 @@ Bannière secondaire Style
   flex-wrap: wrap; /* Permet aux articles de passer à la ligne si l'écran est trop petit */
   width: 90%;
   margin: 0 auto;
+}
+
+.hero-page-intro {
+  background-color: #1e1e1e; /* adapte la couleur à celle de ton header si différent */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hero-page-intro h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
 }
 
 .learn-more-item {
@@ -1225,7 +1254,7 @@ Bannière secondaire Style
   object-fit: cover; /* Conserve l'aspect ratio de l'image sans la rogner */
   border-radius: 30px;
   display: block; /* Élimine les espaces blancs sous les images */
-  margin: 0 auto; /* Centre l'image horizontalement */
+  margin: 20px auto; /* Centre l'image horizontalement */
   object-fit: cover;
 }
 .learn-more-item iframe {
@@ -2010,7 +2039,7 @@ body {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 800px) {
   .sub-headerDisappear {
     display: none;
   }
@@ -2168,3 +2197,127 @@ body {
   background-color: #0a58ca;
   color: #fff;
 }
+
+/* 
+---------------------------------------------
+FAQ
+--------------------------------------------- 
+*/
+
+.faq-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.faq-title {
+  font-size: 28px;
+  
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.faq-question {
+  background-color: #f7f7f7;
+  color: #333;
+  cursor: pointer;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  border: none;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+  background-color: #eaeaea;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 20px;
+}
+
+.faq-answer p {
+  margin: 15px 0;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px; /* assez pour le contenu */
+  padding-bottom: 20px;
+}
+
+
+.faq-more {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.faq-more p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.faq-more .btn-discover {
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  transition: all 0.3s ease;
+}
+
+.faq-more .btn-discover:hover {
+  background-color: #333;
+}
+
+.faq-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .faq-item {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    .faq-question {
+      background: #f7f7f7;
+      padding: 15px 20px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: left;
+      width: 100%;
+      border: none;
+      outline: none;
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      padding: 0 20px;
+    }
+    .faq-answer.open {
+      padding-top: 10px;
+      max-height: 500px;
+    }
