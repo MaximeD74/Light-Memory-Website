@@ -1281,6 +1281,12 @@ Bannière secondaire Style
   color: #555; /* Couleur du texte */
 }
 
+.learn-more-item a {
+  font-size: 1em;
+  color: #555; /* Couleur du texte */
+}
+
+
 /* Responsive Design */
 @media (max-width: 1300px) {
   .learn-more-section {
