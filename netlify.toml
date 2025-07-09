@@ -4,4 +4,4 @@
   to = "https://www.light-memory.com/:splat"
   status = 301
   force = true
-  conditions = { Host = "lightmemory.netlify.app" }
+  conditions = { Host = "https://main--light-memory.netlify.app/" }
