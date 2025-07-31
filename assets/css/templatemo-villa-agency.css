@@ -1428,7 +1428,9 @@ Bannière secondaire Style
 Properties Style
 --------------------------------------------- 
 */
-
+.galleryCenterText {
+  text-align: center;
+}
 .properties {
   margin-top: 50px;
 }
