@@ -11,17 +11,14 @@
 
 
 	$(window).scroll(function() {
-	  var scroll = $(window).scrollTop();
-	  var box = $('.header-text').height();
-	  var header = $('header').height();
+	var scroll = $(window).scrollTop();
 
-	  if (scroll >= box - header) {
-	    $("header").addClass("background-header");
-	  } else {
-	    $("header").removeClass("background-header");
-	  }
+	if (scroll >= 450) {
+		$("header").addClass("background-header");
+	} else {
+		$("header").removeClass("background-header");
+	}
 	})
-
 	$('.owl-banner').owlCarousel({
 	  center: true,
       items:1,
@@ -124,6 +121,19 @@
 
 
 })(window.jQuery);
+
+// FAQ Accordion
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('.faq-question').forEach(function(button) {
+    button.addEventListener('click', function() {
+      var item = button.parentElement;
+      document.querySelectorAll('.faq-item.active').forEach(function(openItem) {
+        if (openItem !== item) openItem.classList.remove('active');
+      });
+      item.classList.toggle('active');
+    });
+  });
+});
 
 document.addEventListener("DOMContentLoaded", function() {
     const targets = document.querySelectorAll('.informationTitleText, .articleInformations iframe');
