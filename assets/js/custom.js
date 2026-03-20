@@ -10,15 +10,7 @@
     });
 
 
-	$(window).scroll(function() {
-	var scroll = $(window).scrollTop();
-
-	if (scroll >= 28) {
-		$("header").addClass("background-header");
-	} else {
-		$("header").removeClass("background-header");
-	}
-	})
+	
 	$('.owl-banner').owlCarousel({
 	  center: true,
       items:1,
