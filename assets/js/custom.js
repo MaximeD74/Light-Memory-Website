@@ -169,3 +169,15 @@ document.addEventListener("DOMContentLoaded", function() {
       observer.observe(item);
     });
   });
+
+  document.addEventListener('wheel', (e) => {
+  if (e.ctrlKey) e.preventDefault(); // bloque Ctrl+scroll (zoom souris)
+}, { passive: false });
+
+document.addEventListener('touchmove', (e) => {
+  if (e.touches.length > 1) e.preventDefault(); // bloque pinch-zoom
+}, { passive: false });
+
+document.addEventListener('keydown', (e) => {
+  if (e.ctrlKey && ['+', '-', '0'].includes(e.key)) e.preventDefault(); // bloque Ctrl+/Ctrl-
+});
